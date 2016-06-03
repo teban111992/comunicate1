@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Comunicate Application login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="media/faviconlogin.ico">
+    </head>
+    <body background="media/login1.jpg">
+    <body>
+    <center>
+        <h1>Welcome Comunicate Application</h1>
+        <hr>
+        <form id="frmLogin" name="frmLogin" action="../controller/UserController.php" method="POST">
+            <h2>Login</h2>
+            <div class="warning">
+                <font size=4 color=red>Please fill out the following form with your login credentials:</font>
+                
+            </div><br><br>
+            <div>
+                <label for="username" class="login">Username</label><br>
+                <input id="username" name="username" type="text" class="login">
+            </div><br>
+            <div>
+                <label for="password" class="login">Password</label><br>
+                <input id="password" name="password" type="password" class="login">
+            </div><br><br>
+            <div>
+                <input type="submit" class="login">
+            </div>
+        </form>
+        </center>
+    </body>
+</html>

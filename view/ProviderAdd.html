@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Add an Provider</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="media/faviconprov.ico">
+        
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+         <script>
+            $(function() {
+               $("#bornDate").datepicker({ dateFormat:'yy-mm-dd'});
+               $("#hiredDate").datepicker({ dateFormat:'yy-mm-dd'});
+            });
+        </script>
+       
+    </head>
+      <marquee style="border:#2E9AFE 2px SOLID">WELCOME TO THE PROVIDER TAB</marquee>
+    <body background="media/prov.jpg">
+    <body>
+    <center>
+        <h1>Add an Provider</h1>
+        <form id="frmAddProduct" name="frmAddProduct" action="../controller/ProviderAddController.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="nameProvider">Name</label></td>
+                    <td><input id="nameProvider" name="nameProvider" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="idProvider">Id</label></td>
+                    <td><input id="idProvider" name="idProvider" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="type">Type</label></td>
+                    <td><input id="type" name="type" type="text"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><input type="submit"></center></td>
+                </tr>
+            </table>
+           <input type="button" onclick= "location.href='main.html' "  value="Return" name="button"/>
+           <br>
+           <br>
+         <div align="center"><img src="media/proveedor1.jpg" width="129" height="145" /></div>
+         <div align="center"><img src="media/proveedor2.png" width="129" height="145" /></div>
+   
+        </form>
+     </center>
+    </body>
+</html>

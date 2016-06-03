@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Add an Seller</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="media/faviconseller.ico">
+        
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+         <script>
+            $(function() {
+               $("#bornDate").datepicker({ dateFormat:'yy-mm-dd'});
+               $("#hiredDate").datepicker({ dateFormat:'yy-mm-dd'});
+            });
+        </script>
+       
+    </head>
+     <marquee style="border:#2E9AFE 2px SOLID">WELCOME TO THE SELLER TAB</marquee>
+    <body background="media/sell.jpg">
+    <body>
+    <center>
+        <h1><font size=20>Add an Seller</font></h1>
+        <form id="frmAddPSeller" name="frmAddSeller" action="../controller/SellerAddController.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="nameSeller">Name</label></td>
+                    <td><input id="nameSeller" name="nameSeller" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="lastnameseller">Lastname</label></td>
+                    <td><input id="lastnameseller" name="lastnameseller" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="idSeller">Id</label></td>
+                    <td><input id="idSeller" name="idSeller" type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><input type="submit"></center></td>
+                </tr>
+            </table>
+            <input type="button" onclick= "location.href='main.html' "  value="Return" name="button"/>
+            <marquee scrolldelay="20" direction="right" crollamount="8" height="500px"> <center>
+                <img src="media/vendedor1.png"/>
+                <img src="media/vendedor2.png"/>
+                <img src="media/vendedor3.jpg"/>
+
+        </form>
+     </center>
+    </body>
+</html>
+

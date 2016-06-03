@@ -1,0 +1,114 @@
+/* 
+    Created on : 12/05/2016, 10:06:00 PM
+    Author     : jf
+*/
+
+table {
+    border: 1px black solid;
+    border-radius: 2px;
+    font: 1em Tahoma, Verdana, Sans-Serif, Arial;
+}
+
+table td {
+    padding: 5px;
+}
+
+table tr:first-child td:first-child {
+    border-radius: 5px 0px 0px 0px;
+}
+
+table tr:first-child td:last-child {
+    border-radius: 0px 5px 0px 0px;
+}
+
+table tr:last-child td:first-child {
+    border-radius: 0px 0px 0px 5px;
+}
+
+table tr:last-child td:last-child {
+    border-radius: 0px 0px 5px 0px;
+}
+
+table td:not(:last-child) {
+    border-right: 1px #666 solid;
+}
+
+table tr:nth-child(2n) {
+    background: beige;
+}
+
+table.header tr:not(:first-child):hover, table:not(.header) tr:hover {
+    background: #E0FFFF;
+}
+
+table.header tr:first-child {
+    font-weight: bold;
+    color: white;
+    background-color: #444;
+    border-bottom: 1px black solid;
+}
+
+table.header tr:nth-child(n+2) {
+    text-align: right;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 5px;
+    color: royalblue;
+    background-color: whitesmoke;
+}
+
+.button {
+    width: 150px;
+    text-align: center;
+    background: limegreen;
+    background-image: -webkit-linear-gradient(top, limegreen, darkgreen);
+    background-image: -moz-linear-gradient(top, limegreen, darkgreen);
+    background-image: -ms-linear-gradient(top, limegreen, darkgreen);
+    background-image: -o-linear-gradient(top, limegreen, darkgreen);
+    background-image: linear-gradient(bottom, limegreen, darkgreen);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 10px;
+    font: normal 1em Tahome, Verdana, Sans-Serif, Arial;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.button:hover {
+  background: green;
+  background-image: -webkit-linear-gradient(top, green, limegreen);
+  background-image: -moz-linear-gradient(top, green, limegreen);
+  background-image: -ms-linear-gradient(top, green, limegreen);
+  background-image: -o-linear-gradient(top, green, limegreen);
+  background-image: linear-gradient(bottom, green, limegreen);
+  text-decoration: none;
+}
+
+h1 {
+    font: normal 2em Tahoma, Verdana, Sans-Serif, Arial;
+}
+
+h2 {
+    font: normal 1.5em Tahoma, Verdana, Sans-Serif, Arial;
+}
+
+p {
+    color: blue;
+    font: normal 1em Tahoma, Verdana, Sans-Serif, Arial;
+}
+
+.login {
+    font: normal 1em Tahoma, Verdana, Sans-Serif, Arial;
+}
+
+.warning {
+    font: normal 0.8em Tahoma, Verdana, Sans-Serif, Arial;
+    color: gray;
+}

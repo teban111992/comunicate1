@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Add an Product</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+         <link rel="shortcut icon" href="media/faviconprod.png">
+        
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+         <script>
+            $(function() {
+               $("#bornDate").datepicker({ dateFormat:'yy-mm-dd'});
+               $("#hiredDate").datepicker({ dateFormat:'yy-mm-dd'});
+            });
+        </script>
+       
+    </head>
+    
+     <marquee style="border:#FF4500 2px SOLID">WELCOME TO THE PRODUCT TAB</marquee>
+    <body background="media/nueva.jpg">
+    <body>
+    <center>
+        <h1>Add an Product</h1>
+        <form id="frmAddProduct" name="frmAddProduct" action="../controller/ProductAddController.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="nameProduct">Name</label></td>
+                    <td><input id="nameProduct" name="nameProduct" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="code">Code</label></td>
+                    <td><input id="code" name="code" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="idProvider">Id Provider</label></td>
+                    <td><input id="idProvider" name="idProvider" type="text"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="publicPrice">Public Price</label></td>
+                    <td><input id="publicPrice" name="publicPrice" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="suplierPrice">Suplier Price</label></td>
+                    <td><input id="suplierPrice" name="suplierPrice" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="quantity">Quantity</label></td>
+                    <td><input id="quantity" name="quantity" type="text"></td>
+                </tr>
+              
+                
+                <tr>
+                    <td colspan="2"><center><input type="submit"></center></td>
+                   
+                </tr>
+                  
+           </center> 
+      
+            </table>
+             <input type="button" onclick= "location.href='main.html' "  value="Return" name="button"/>
+            <marquee scrolldelay="20" direction="right" crollamount="8" height="500px"> <center>
+        <img src="media/productos1.png"/>
+        <img src="media/productos2.png"/>
+        <img src="media/productos3.jpg"/>
+      
+   
+        </form>
+     </center>
+    </body>
+</html>

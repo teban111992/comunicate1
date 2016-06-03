@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Add an Sale</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="media/faviconsale.ico">
+        
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+         <script>
+            $(function() {
+               $("#bornDate").datepicker({ dateFormat:'yy-mm-dd'});
+               $("#hiredDate").datepicker({ dateFormat:'yy-mm-dd'});
+            });
+        </script>
+       
+    </head>
+     <marquee style="border:#2E9AFE 2px SOLID">WELCOME TO THE SALE TAB</marquee>
+    <body background="media/sale.jpg">
+    <body>
+    <center>
+        <h1>Add an Sale</h1>
+        <form id="frmAddProduct" name="frmAddProduct" action="../controller/SaleAddController.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="idBill">Id Bill</label></td>
+                    <td><input id="idBill" name="idBill" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="codeProduct">Code Product</label></td>
+                    <td><input id="codeProduct" name="codeProduct" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="quantity">Quantity</label></td>
+                    <td><input id="quantity" name="quantity" type="text"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><input type="submit"></center></td>
+                </tr>
+            </table>
+             <input type="button" onclick= "location.href='main.html' "  value="Return" name="button"/>
+   
+        </form>
+        <object type="application/x-shockwave-flash" data="media/dewplayer-mini.swf" 
+width="200" height="20" id="dewplayer" name="dewplayer">
+<param name="movie" value="dewplayer.swf" />
+<param name="flashvars" value="mp3=media/vivaldi.mp3&autostart=0&autoreplay=1&
+showtime=1&randomplay=1&nopointer=1&bgcolor=FFFF00" />
+</object>
+     </center>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Add an bill</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="media/faviconbill.ico">
+        
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+         <script>
+            $(function() {
+               $("#bornDate").datepicker({ dateFormat:'yy-mm-dd'});
+               $("#hiredDate").datepicker({ dateFormat:'yy-mm-dd'});
+            });
+        </script>
+       
+    </head>
+      <marquee style="border:#2E9AFE 2px SOLID">WELCOME TO THE BILL TAB</marquee>
+    <body background="media/bill.jpg">
+    <body>
+    <center>
+        <h1>Add an Bill</h1>
+        <form id="frmAddProduct" name="frmAddProduct" action="../controller/BillAddController.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="idBill">Id</label></td>
+                    <td><input id="idBill" name="idBill" type="number"></td>
+                </tr>
+                <tr>
+                    <td><label for="dateBill">Date</label></td>
+                    <td><input id="dateBill" name="dateBill" type="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="idSeller">Id Seller</label></td>
+                    <td><input id="idSeller" name="idSeller" type="number"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="idClient">Id Client</label></td>
+                    <td><input id="idClient" name="idClient" type="number"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="totalBill">Total</label></td>
+                    <td><input id="totalBill" name="totalBill" type="number"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><input type="submit"></center></td>
+                </tr>
+            </table>
+            <input type="button" onclick= "location.href='main.html' "  value="Return" name="button"/>
+   
+        </form>
+     </center>
+    </body>
+</html>
